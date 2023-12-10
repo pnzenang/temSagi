@@ -100,7 +100,7 @@ const AdminComplexPaginationContainer = () => {
       <div className='mt-1 flex justify-end '>
         <div className='join'>
           <button
-            className='btn prev-btn bg-base-300 btn-xs sm:btn-md join-item mr-2 mt-2'
+            className='btn prev-btn bg-base-300 btn-xs sm:btn-md join-item mr-2 mt-2 border-1 border-primary'
             onClick={() => {
               let prevPage = currentPage - 1;
               if (prevPage < 1) prevPage = numOfPages;
@@ -112,7 +112,7 @@ const AdminComplexPaginationContainer = () => {
           </button>
           <div className='btn-container '>{renderPageButtons()}</div>
           <button
-            className='btn next-btn bg-base-300 btn-xs sm:btn-md join-item ml-2 mt-2'
+            className='btn next-btn bg-base-300 btn-xs sm:btn-md join-item ml-2 mt-2 border-1 border-primary'
             onClick={() => {
               let nextPage = currentPage + 1;
               if (nextPage > numOfPages) nextPage = 1;
